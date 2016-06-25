@@ -1,0 +1,2 @@
+# manuals
+practice with jekyll

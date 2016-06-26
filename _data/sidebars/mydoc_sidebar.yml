@@ -48,6 +48,10 @@ entries:
       url: /mydoc_about/
       output: web, pdf
 
+    - title: About22 the theme author
+      url: /mydoc_about2/
+      output: web, pdf
+
     - title: Support
       url: /mydoc_support/
       output: web, pdf

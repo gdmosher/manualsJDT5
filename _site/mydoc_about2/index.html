@@ -3,9 +3,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="By default, all the files in your Jekyll project are included in the output (this differs from DITA projects, which don't include files unless noted on the m...">
-<meta name="keywords" content="single_sourcing,  exclusion, separating outputs, removing files from outputs">
-<title>Excluding files  | Jekyll theme for designers</title>
+<meta name="description" content="I have used this theme for projects that I've worked on as a professional technical writer.">
+<meta name="keywords" content="getting_started,  documentation theme, jekyll, technical writers, help authoring tools, hat replacements">
+<title>About2 the theme author  | Jekyll theme for designers</title>
 <link rel="stylesheet" href="/manuals/css/syntax.css">
 
 
@@ -160,7 +160,7 @@
 <script>
 function SendLinkByMail(href) {
 var subject= "Jekyll theme for designers feedback";
-var body = "I have some feedback about the Excluding files page: ";
+var body = "I have some feedback about the About2 the theme author page: ";
 body += window.location.href;
 body += "";
 var uri = "mailto:tomjohnson1492@gmail.com?subject=";
@@ -187,7 +187,7 @@ window.location.href = uri;
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: '/manuals/search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Excluding files">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="About2 the theme author">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -276,7 +276,7 @@ window.location.href = uri;
             
             
             
-            <li><a href="/manuals/mydoc_about2/">About22 the theme author</a></li>
+            <li class="active"><a href="/manuals/mydoc_about2/">About22 the theme author</a></li>
             
             
             
@@ -695,7 +695,7 @@ window.location.href = uri;
     <!-- Content Column -->
     <div class="col-md-9">
         <div class="post-header">
-   <h1 class="post-title-main">Excluding files</h1>
+   <h1 class="post-title-main">About2 the theme author</h1>
 </div>
 
 
@@ -703,7 +703,7 @@ window.location.href = uri;
 <div class="post-content">
 
    
-    <div class="summary">By default, all the files in your Jekyll project are included in the output (this differs from DITA projects, which don't include files unless noted on the map). If you're single sourcing, you'll need to exclude the files that shouldn't be included in the output. The sidebar doesn't control inclusion or exclusion.</div>
+    <div class="summary">I have used this theme for projects that I've worked on as a professional technical writer.</div>
    
 
     
@@ -735,87 +735,20 @@ $('#toc').on('click', 'a', function() {
 
     
 
-    <a target="_blank" href="https://github.com/tomjohnson1492/documentation-theme-jekyll/blob/gh-pages/mydoc/mydoc_exluding_files.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+    <a target="_blank" href="https://github.com/tomjohnson1492/documentation-theme-jekyll/blob/gh-pages/mydoc/mydoc_about2.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
     
 
     
 
-  <h2 id="about-exclusion">About exclusion</h2>
-<p>By default, all files in your project are included in your output (regardless of whether they’re listed in the sidebar_doc.yml file or not). To exclude files, note them in the <code class="highlighter-rouge">exclude</code> section in the configuration file. Here’s a sample:</p>
+  <p>My name is Tom Johnson, and I’m a technical writer, blogger, and podcaster based in San Jose, California. My blog is here: <a href="http://idratherbewriting.com">http://idratherbewriting.com</a>. I write several posts there a week. See <a href="http://idratherbewriting.com/aboutme/">my blog’s about page</a> for more details about me.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>
-exclude:
-  - mydoc_writers_*
-  - bower_components
-  - Gemfile
-</code></pre>
-</div>
+<p>I have used this theme and variations of it for various documentation projects. This theme has undergone several major iterations, and now it’s fairly stable and full of all the features that I need. You are welcome to use it for your documentation projects for free.</p>
 
-<p>If you have different outputs for your site, you’ll want to customize the exclude sections in your various configuration files.</p>
+<p>I think this theme does pretty much everything that you can do with something like OxygenXML, but without the constraints of structured authoring. Everything is completely open and changeable, so if you start tinkering around with the theme’s files, you can break things. But it’s completely empowering as well!</p>
 
-<h2 id="exclude-strategies">Exclude strategies</h2>
-<p>Here’s the process I recommend. Put all files in the root directory of your project. Suppose one project’s name is alpha and the other is beta. Then name each file as follows:</p>
+<p>With a completely open architecture and code base, you can modify the code to make it do exactly what you want, without having to jump through all kinds of confusing or proprietary code.</p>
 
-<ul>
-  <li>alpha_sample.html</li>
-  <li>beta_sample.html</li>
-</ul>
-
-<p>In your exclude list for your beta project, specify it as follows:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>exclude:
-- alpha_*
-</code></pre>
-</div>
-
-<p>In your exclude list for your alpha project, specify it as follows:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>exclude:
-- beta_*
-</code></pre>
-</div>
-
-<p>If you have more sophisticated exclusion, add another level to your file names. For example, if you have different programming languages you want to filter by, add this:</p>
-
-<ul>
-  <li>alpha_java_sample.html</li>
-  <li>alpha_cpp_sample.html</li>
-</ul>
-
-<p>Then you exclude files for your Alpha C++ project as follows:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>exclude:
-
-- alpha_java_*
-- beta_*
-</code></pre>
-</div>
-
-<p>And you exclude files for your Alpha Java project as follows:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>exclude:
-
-- alpha_cpp_*
-- alpha_beta_*
-</code></pre>
-</div>
-
-<p>When you exclude folders, include the trailing slash at the end of the folder name:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>exclude:
-- images/alpha/
-</code></pre>
-</div>
-
-<p>There isn’t a way to automatically exclude anything. By default, everything is included unless you explicitly list it under the exclude section.</p>
-
-<h2 id="excluding-draft-content">Excluding draft content</h2>
-
-<p>If you’re working on a draft, put it inside the _drafts folder or add <code class="highlighter-rouge">published: false</code> in the frontmatter. The _drafts folder is excluded by default, so you don’t have to specify it in your exclude list.</p>
-
-<h2 id="limitations">Limitations</h2>
-
-<p>What if a file should appear in two projects but not the third? This can get tricky. For some files, rather than using a wildcard, you may need to manually specify the entire filename that you’re excluding instead of excluding it by way of a wildcard pattern.</p>
+<p>If there’s a feature you need but it isn’t available here, let me know and I might add it. Alternatively, if you fork the theme, I would love to see your modifications and enhancements.</p>
 
 
 <div class="tags">
@@ -824,7 +757,7 @@ exclude:
     
     
     
-    <a href="/manuals/tag_single_sourcing" class="btn btn-default navbar-btn cursorNorm" role="button">single_sourcing</a>
+    <a href="/manuals/tag_getting_started" class="btn btn-default navbar-btn cursorNorm" role="button">getting_started</a>
     
     
     

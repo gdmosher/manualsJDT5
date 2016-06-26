@@ -1,5 +1,5 @@
 ---
-title: About2 the theme author
+title: About22 the theme author
 keywords: documentation theme, jekyll, technical writers, help authoring tools, hat replacements
 last_updated: March 20, 2016
 tags: [getting_started]

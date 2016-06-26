@@ -46,6 +46,13 @@ mydoc_about:
 
 
  
+mydoc_about2:
+  title: "About22 the theme author"
+  url: /manuals/mydoc_about2/
+  link: <a href="/manuals/mydoc_about2/">About22 the theme author</a>
+
+
+ 
 mydoc_support:
   title: "Support"
   url: /manuals/mydoc_support/

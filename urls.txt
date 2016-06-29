@@ -601,6 +601,34 @@ news:
 
 
 
+news:
+  title: "News"
+  url: "news"
+  link: "<a href='/news/'>News</a>"
+
+
+
+news:
+  title: "News"
+  url: "news"
+  link: "<a href='/news/'>News</a>"
+
+
+
+news:
+  title: "News"
+  url: "news"
+  link: "<a href='/news/'>News</a>"
+
+
+
+news:
+  title: "News"
+  url: "news"
+  link: "<a href='/news/'>News</a>"
+
+
+
 
 
 
@@ -636,6 +664,13 @@ p2_landing_page:
   title: "Product 2"
   url: "p2_landing_page"
   link: "<a href='/p2_landing_page/'>Product 2</a>"
+
+
+
+home:
+  title: "Manuals"
+  url: "home"
+  link: "<a href='/home/'>Manuals</a>"
 
 
 

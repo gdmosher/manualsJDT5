@@ -3,13 +3,553 @@
 
 
 
+{
+"title": "_ChemmineR_: Cheminformatics Toolkit for R",
+"tags": "",
+"keywords": "",
+"url": "/manuals/vignettes/08_ChemmineR/ChemmineR.Rmd",
+"summary": ""
+},
+
+
+
+{
+"title": "_ChemmineR_: Cheminformatics Toolkit for R",
+"tags": "",
+"keywords": "",
+"url": "/manuals/vignettes/08_ChemmineR/ChemmineR.knit/",
+"summary": ""
+},
+
+
+
+{
+"title": "_ChemmineR_: Cheminformatics Toolkit for R",
+"tags": "",
+"keywords": "",
+"url": "/manuals/vignettes/08_ChemmineR/ChemmineR.utf8/",
+"summary": ""
+},
+
+
+
+{
+"title": "Introduction to R",
+"tags": "",
+"keywords": "",
+"url": "/manuals/vignettes/02_Rbasics/Rbasics.Rmd",
+"summary": ""
+},
+
+
+
+{
+"title": "Introduction to R",
+"tags": "",
+"keywords": "",
+"url": "/manuals/vignettes/02_Rbasics/Rbasics.knit/",
+"summary": ""
+},
+
+
+
+{
+"title": "Introduction to R",
+"tags": "",
+"keywords": "",
+"url": "/manuals/vignettes/02_Rbasics/Rbasics.utf8/",
+"summary": ""
+},
+
+
+
+{
+"title": "bioassayR - Introduction and Examples",
+"tags": "",
+"keywords": "",
+"url": "/manuals/vignettes/09_bioassayR/bioassayR.Rmd",
+"summary": ""
+},
+
+
+
+{
+"title": "bioassayR - Introduction and Examples",
+"tags": "",
+"keywords": "",
+"url": "/manuals/vignettes/09_bioassayR/bioassayR.knit/",
+"summary": ""
+},
+
+
+
+{
+"title": "bioassayR - Introduction and Examples",
+"tags": "",
+"keywords": "",
+"url": "/manuals/vignettes/09_bioassayR/bioassayR.utf8/",
+"summary": ""
+},
+
+
+
+
+
+{
+"title": "Introduction",
+"tags": "",
+"keywords": "",
+"url": "/manuals/vignettes/01_Overview/home/",
+"summary": ""
+},
+
+
+
+{
+"title": "Introduction",
+"tags": "",
+"keywords": "",
+"url": "/manuals/home/",
+"summary": ""
+},
+
+
+
+{
+"title": "Introduction",
+"tags": "",
+"keywords": "",
+"url": "/manuals/",
+"summary": ""
+},
+
 
 
 {
 "title": "Getting started overview",
 "tags": "getting_started",
 "keywords": "",
-"url": "/manuals/",
+"url": "/manuals/indexMYDOC/",
+"summary": ""
+},
+
+
+
+{
+"title": "ChemmineR - Cheminformatics Toolkit for R",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_ChemmineR_01/",
+"summary": ""
+},
+
+
+
+{
+"title": "Getting Started",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_ChemmineR_02/",
+"summary": ""
+},
+
+
+
+{
+"title": "OpenBabel Functions",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_ChemmineR_03/",
+"summary": ""
+},
+
+
+
+{
+"title": "Overview of Classes and Functions",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_ChemmineR_04/",
+"summary": ""
+},
+
+
+
+{
+"title": "Import of Compounds",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_ChemmineR_05/",
+"summary": ""
+},
+
+
+
+{
+"title": "Export of Compounds",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_ChemmineR_06/",
+"summary": ""
+},
+
+
+
+{
+"title": "Format Interconversions",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_ChemmineR_07/",
+"summary": ""
+},
+
+
+
+{
+"title": "Splitting SD Files",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_ChemmineR_08/",
+"summary": ""
+},
+
+
+
+{
+"title": "Streaming Through Large SD Files",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_ChemmineR_09/",
+"summary": ""
+},
+
+
+
+{
+"title": "Storing Compounds in an SQL Database",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_ChemmineR_10/",
+"summary": ""
+},
+
+
+
+{
+"title": "Working with SDF/SDFset Classes",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_ChemmineR_11/",
+"summary": ""
+},
+
+
+
+{
+"title": "Molecular Property Functions (Physicochemical Descriptors)",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_ChemmineR_12/",
+"summary": ""
+},
+
+
+
+{
+"title": "Bond Matrices",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_ChemmineR_13/",
+"summary": ""
+},
+
+
+
+{
+"title": "Charges and Missing Hydrogens",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_ChemmineR_14/",
+"summary": ""
+},
+
+
+
+{
+"title": "Ring Perception and Aromaticity Assignment",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_ChemmineR_15/",
+"summary": ""
+},
+
+
+
+{
+"title": "Rendering Chemical Structure Images",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_ChemmineR_16/",
+"summary": ""
+},
+
+
+
+{
+"title": "Similarity Comparisons and Searching",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_ChemmineR_17/",
+"summary": ""
+},
+
+
+
+{
+"title": "Clustering",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_ChemmineR_18/",
+"summary": ""
+},
+
+
+
+{
+"title": "Searching PubChem",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_ChemmineR_19/",
+"summary": ""
+},
+
+
+
+{
+"title": "ChemMine Tools R Interface",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_ChemmineR_20/",
+"summary": ""
+},
+
+
+
+{
+"title": "Version Information",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_ChemmineR_21/",
+"summary": ""
+},
+
+
+
+{
+"title": "Funding",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_ChemmineR_22/",
+"summary": ""
+},
+
+
+
+{
+"title": "References",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_ChemmineR_23/",
+"summary": ""
+},
+
+
+
+{
+"title": "Overview",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_Rbasics_01/",
+"summary": ""
+},
+
+
+
+{
+"title": "Look and Feel of R Environment",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_Rbasics_02/",
+"summary": ""
+},
+
+
+
+{
+"title": "R Package Repositories",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_Rbasics_03/",
+"summary": ""
+},
+
+
+
+{
+"title": "Installation of R and Add-on Packages",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_Rbasics_04/",
+"summary": ""
+},
+
+
+
+{
+"title": "Getting Around",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_Rbasics_05/",
+"summary": ""
+},
+
+
+
+{
+"title": "Basic Syntax",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_Rbasics_06/",
+"summary": ""
+},
+
+
+
+{
+"title": "Data Types",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_Rbasics_07/",
+"summary": ""
+},
+
+
+
+{
+"title": "Data objects",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_Rbasics_08/",
+"summary": ""
+},
+
+
+
+{
+"title": "Graphics example",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_Rbasics_09/",
+"summary": ""
+},
+
+
+
+{
+"title": "Introduction to R",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_Rbasics_1/",
+"summary": ""
+},
+
+
+
+{
+"title": "Session Info",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_Rbasics_10/",
+"summary": ""
+},
+
+
+
+{
+"title": "R Package Repositories",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_Rbasics_2/",
+"summary": ""
+},
+
+
+
+{
+"title": "Installation of R and Add-on Packages",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_Rbasics_3/",
+"summary": ""
+},
+
+
+
+{
+"title": "Getting Around",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_Rbasics_4/",
+"summary": ""
+},
+
+
+
+{
+"title": "Basic Syntax",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_Rbasics_5/",
+"summary": ""
+},
+
+
+
+{
+"title": "Data Types",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_Rbasics_6/",
+"summary": ""
+},
+
+
+
+{
+"title": "Data objects",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_Rbasics_7/",
+"summary": ""
+},
+
+
+
+{
+"title": "Graphics example",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_Rbasics_8/",
+"summary": ""
+},
+
+
+
+{
+"title": "Session Info",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_Rbasics_9/",
 "summary": ""
 },
 
@@ -66,6 +606,76 @@
 
 
 {
+"title": "bioassayR - Introduction and Examples",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_bioassayR_1/",
+"summary": ""
+},
+
+
+
+{
+"title": "Getting Started",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_bioassayR_2/",
+"summary": ""
+},
+
+
+
+{
+"title": "Examples",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_bioassayR_3/",
+"summary": ""
+},
+
+
+
+{
+"title": "Building PubChem BioAssay Database",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_bioassayR_4/",
+"summary": ""
+},
+
+
+
+{
+"title": "Version Information",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_bioassayR_5/",
+"summary": ""
+},
+
+
+
+{
+"title": "Funding",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_bioassayR_6/",
+"summary": ""
+},
+
+
+
+{
+"title": "References",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_bioassayR_7/",
+"summary": ""
+},
+
+
+
+{
 "title": "Build arguments",
 "tags": "publishing",
 "keywords": "building, serving, serve, build",
@@ -81,6 +691,26 @@
 "keywords": "build scripts, generating outputs, building, publishing",
 "url": "/manuals/mydoc_build_scripts/",
 "summary": "You need to customize the build scripts. These script automate the publishing of your PDFs and web outputs through shell scripts on the command line."
+},
+
+
+
+{
+"title": "Class Teaching",
+"tags": "",
+"keywords": "",
+"url": "/manuals/vignettes/01_Overview/mydoc_classes/",
+"summary": ""
+},
+
+
+
+{
+"title": "Class Teaching",
+"tags": "",
+"keywords": "",
+"url": "/manuals/mydoc_classes/",
+"summary": ""
 },
 
 
@@ -221,6 +851,26 @@
 "keywords": "jekyll on windows, pc, ruby, ruby dev kit",
 "url": "/manuals/mydoc_install_jekyll_on_windows/",
 "summary": ""
+},
+
+
+
+{
+"title": "Administration of site",
+"tags": "",
+"keywords": "navigation tabs, hide sections, tabbers, interface tabs",
+"url": "/manuals/vignettes/12_Internal_notes/mydoc_internal_notes/",
+"summary": "Internal notes for maintaining this site."
+},
+
+
+
+{
+"title": "Administration of site",
+"tags": "",
+"keywords": "navigation tabs, hide sections, tabbers, interface tabs",
+"url": "/manuals/manuals/mydoc_internal_notes/",
+"summary": "Internal notes for maintaining this site."
 },
 
 
@@ -441,6 +1091,66 @@
 "keywords": "rouge, pygments, prettify, color coding,",
 "url": "/manuals/mydoc_syntax_highlighting/",
 "summary": "You can apply syntax highlighting to your code. This theme uses pygments and applies color coding based on the lexer you specify."
+},
+
+
+
+{
+"title": "systemPipeR - NGS workflow and report generation environment",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_systemPipeR_1/",
+"summary": ""
+},
+
+
+
+{
+"title": "Getting Started",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_systemPipeR_2/",
+"summary": ""
+},
+
+
+
+{
+"title": "Workflow overview",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_systemPipeR_3/",
+"summary": ""
+},
+
+
+
+{
+"title": "Workflow templates",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_systemPipeR_4/",
+"summary": ""
+},
+
+
+
+{
+"title": "Version information",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_systemPipeR_5/",
+"summary": ""
+},
+
+
+
+{
+"title": "References",
+"tags": "",
+"keywords": "",
+"url": "/manuals/manuals/mydoc_systemPipeR_6/",
+"summary": ""
 },
 
 
@@ -778,6 +1488,38 @@
 
 
 
+
+
+
+
+
+{
+"title": "_systemPipeR_: NGS workflow and report generation environment",
+"tags": "",
+"keywords": "",
+"url": "/manuals/vignettes/07_systemPipeR/systemPipeR.Rmd",
+"summary": ""
+},
+
+
+
+{
+"title": "_systemPipeR_: NGS workflow and report generation environment",
+"tags": "",
+"keywords": "",
+"url": "/manuals/vignettes/07_systemPipeR/systemPipeR.knit/",
+"summary": ""
+},
+
+
+
+{
+"title": "_systemPipeR_: NGS workflow and report generation environment",
+"tags": "",
+"keywords": "",
+"url": "/manuals/vignettes/07_systemPipeR/systemPipeR.utf8/",
+"summary": ""
+},
 
 
 

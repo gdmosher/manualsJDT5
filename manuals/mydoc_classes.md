@@ -3,6 +3,9 @@ title: Class Teaching
 audience: field engineers, clients
 type: first_page
 homepage: true
+sidebar: manuals_sidebar
+permalink: /mydoc_classes/
+folder: mydoc
 ---
 
 ## Courses

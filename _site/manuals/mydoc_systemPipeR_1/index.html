@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>systemPipeR - NGS workflow and report generation environment  | Manuals</title>
+<link rel="stylesheet" href="/manuals/css/syntax.css">
+
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/manuals/css/modern-business.css">
+<link rel="stylesheet" href="/manuals/css/lavish-bootstrap.css">
+<link rel="stylesheet" href="/manuals/css/customstyles.css">
+<link rel="stylesheet" href="/manuals/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/manuals/js/jquery.navgoco.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="/manuals/js/toc.js"></script>
+<script src="/manuals/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/manuals/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="" href="http://idratherbewriting.com/manuals/feed.xml">
+
+
+
+
+ 
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/manuals/">&nbsp;<span class="projectTitle"> Data Analysis Tutorials</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- entries without drop-downs appear here -->
+                
+                
+                
+                <li><a href="/manuals/news/">News</a></li>
+                
+                
+                
+                <li><a href="/manuals/news/">News</a></li>
+                
+                
+                
+                <li><a href="/manuals/news/">News</a></li>
+                
+                
+                
+                <li><a href="/manuals/news/">News</a></li>
+                
+                
+                
+                <li><a href="/manuals/news/">News</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jekyll Resources<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="https://github.com/tomjohnson1492/documentation-theme-jekyll" target="_blank">Github Repo</a></li>
+                        
+                        
+                        
+                        <li><a href="https://talk.jekyllrb.com" target="_blank">Jekyll Talk</a></li>
+                        
+                        
+                        
+                        <li><a href="http://jekyllrb.com/docs/home/" target="_blank">Jekyll documentation</a></li>
+                        
+                        
+                        
+                        <li><a href="http://stackoverflow.com/questions/tagged/jekyll" target="_blank">Jekyll on Stack Overflow</a></li>
+                        
+                        
+                        
+                        <li><a href="http://idratherbewriting.com/category-jekyll/" target="_blank">Jekyll on my blog</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="/manuals/mydoc_introduction/">Jekyll Documentation Theme</a></li>
+                        
+                        
+                        
+                        <li><a href="/manuals/p1_landing_page/">Product 1</a></li>
+                        
+                        
+                        
+                        <li><a href="/manuals/p2_landing_page/">Product 2</a></li>
+                        
+                        
+                        
+                        <li><a href="/manuals/home/">Manuals</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+			<!-- Send feedback function -->
+<script>
+function SendLinkByMail(href) {
+var subject= "Manuals feedback";
+var body = "I have some feedback about the systemPipeR - NGS workflow and report generation environment page: ";
+body += window.location.href;
+body += "";
+var uri = "mailto:tomjohnson1492@gmail.com?subject=";
+uri += encodeURIComponent(subject);
+uri += "&body=";
+uri += encodeURIComponent(body);
+window.location.href = uri;
+}
+</script>
+
+<li><a href="javascript:(function()%7BSendLinkByMail()%3B%7D)()%3B" target="_blank"><i class="fa fa-envelope-o"></i> Feedback</a></li>
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/manuals/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/manuals/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="systemPipeR - NGS workflow and report generation environment">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+    <div class="col-lg-12">&nbsp;</div>
+    <!-- Content Row -->
+    <div class="row">
+        <!-- Sidebar Column -->
+        <div class="col-md-3">
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+<ul id="mysidebar" class="nav">
+    <li class="sidebarTitle"> </li>
+    
+    
+    
+        
+    
+    <li>
+        <a href="#">Overview</a>
+        <ul>
+            
+            
+            
+            <li><a href="/manuals/home/">Introduction</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/manuals/mydoc_classes/">Class teaching</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">Introduction to R</a>
+        <ul>
+            
+            
+            
+            <li><a href="/manuals/manuals/mydoc_Rbasics_1/">1. Overview</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/manuals/mydoc/mydoc_Rbasics_2.html">2. R Package Repositories</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/manuals/mydoc/mydoc_Rbasics_3.html">3. Installation of R and Add-on Packages</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/manuals/mydoc/mydoc_Rbasics_4.html">4. Getting Around</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/manuals/mydoc/mydoc_Rbasics_5.html">5. Basic Syntax</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/manuals/mydoc/mydoc_Rbasics_6.html">6. Data Types</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/manuals/mydoc/mydoc_Rbasics_7.html">7. Data objects</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/manuals/mydoc/mydoc_Rbasics_8.html">8. Graphics example</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/manuals/mydoc/mydoc_Rbasics_9.html">9. Session Info</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">ChemmineR</a>
+        <ul>
+            
+            
+            
+            <li><a href="/manuals/mydoc/mydoc_ChemmineR_01.html">1. Introduction</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/manuals/mydoc/mydoc_ChemmineR_02.html">2. Getting Started</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/manuals/mydoc/mydoc_ChemmineR_03.html">3. OpenBabel Functions</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/manuals/mydoc/mydoc_ChemmineR_04.html">4. Overview of Classes and Functions</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/manuals/mydoc/mydoc_ChemmineR_05.html">5. Import of Compounds</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/manuals/mydoc/mydoc_ChemmineR_06.html">6. Export of Compounds</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/manuals/mydoc/mydoc_ChemmineR_07.html">7. Format Interconversions</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/manuals/mydoc/mydoc_ChemmineR_08.html">8. Splitting SD Files</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/manuals/mydoc/mydoc_ChemmineR_09.html">9. Streaming Through Large SD Files</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/manuals/mydoc/mydoc_ChemmineR_10.html">10. Storing Compounds in an SQL Database</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/manuals/mydoc/mydoc_ChemmineR_11.html">11. Working with SDF/SDFset Classes</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/manuals/mydoc/mydoc_ChemmineR_12.html">12. Molecular Property Functions (Physicochemical Descriptors)</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/manuals/mydoc/mydoc_ChemmineR_13.html">13. Bond Matrices</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/manuals/mydoc/mydoc_ChemmineR_14.html">14. Charges and Missing Hydrogens</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/manuals/mydoc/mydoc_ChemmineR_15.html">15. Ring Perception and Aromaticity Assignment</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/manuals/mydoc/mydoc_ChemmineR_16.html">16. Rendering Chemical Structure Images</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/manuals/mydoc/mydoc_ChemmineR_17.html">17. Similarity Comparisons and Searching</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/manuals/mydoc/mydoc_ChemmineR_18.html">18. Clustering</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/manuals/mydoc/mydoc_ChemmineR_19.html">19. Searching PubChem</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/manuals/mydoc/mydoc_ChemmineR_20.html">20. ChemMine Tools R Interface</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/manuals/mydoc/mydoc_ChemmineR_21.html">21. Version Information</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/manuals/mydoc/mydoc_ChemmineR_22.html">22. Funding</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/manuals/mydoc/mydoc_ChemmineR_23.html">23. References</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">bioassayR</a>
+        <ul>
+            
+            
+            
+            <li><a href="/manuals/mydoc/mydoc_bioassayR_1.html">1. Introduction</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/manuals/mydoc/mydoc_bioassayR_2.html">2. Getting Started</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/manuals/mydoc/mydoc_bioassayR_3.html">3. Examples</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/manuals/mydoc/mydoc_bioassayR_4.html">4. Building PubChem BioAssay Database</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/manuals/mydoc/mydoc_bioassayR_5.html">5. Version Information</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/manuals/mydoc/mydoc_bioassayR_6.html">6. Funding</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/manuals/mydoc/mydoc_bioassayR_7.html">7. References</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">systemPipeR</a>
+        <ul>
+            
+            
+            
+            <li><a href="/manuals/mydoc/mydoc_systemPipeR_1.html">1. Introduction</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/manuals/mydoc/mydoc_systemPipeR_2.html">2. Getting Started</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/manuals/mydoc/mydoc_systemPipeR_3.html">3. Workflow overview</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/manuals/mydoc/mydoc_systemPipeR_4.html">4. Workflow templates</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/manuals/mydoc/mydoc_systemPipeR_5.html">5. Version information</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="/manuals/mydoc/mydoc_systemPipeR_6.html">6. References</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">Internal notes</a>
+        <ul>
+            
+            
+            
+            <li><a href="/manuals/mydoc/mydoc_internal_notes.html">Administration of site</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+        
+        <!-- if you aren't using the accordion, uncomment this block:
+           <p class="external">
+               <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+           </p>
+           -->
+    </li>
+</ul>
+</div>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+    <!-- Content Column -->
+    <div class="col-md-9">
+        <div class="post-header">
+   <h1 class="post-title-main">systemPipeR - NGS workflow and report generation environment</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
+});
+</script>
+
+<div id="toc"></div>
+
+    
+
+    
+
+    
+
+    <a target="_blank" href="https://github.com/tomjohnson1492/documentation-theme-jekyll/blob/gh-pages//manualsmydoc_systemPipeR_1.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+    
+
+    
+
+  <p>Author: Thomas Girke (thomas.girke@ucr.edu)</p>
+
+<p>Last update: 06 March, 2016</p>
+
+<p>Alternative formats of this tutorial:
+<a href="https://htmlpreview.github.io/?https://github.com/tgirke/systemPipeR/blob/master/vignettes/systemPipeR.html"><code class="highlighter-rouge">.Rmd HTML</code></a>,
+<a href="https://raw.githubusercontent.com/tgirke/manuals/master/vignettes/07_systemPipeR/systemPipeR.Rmd"><code class="highlighter-rouge">.Rmd</code></a>,
+<a href="https://raw.githubusercontent.com/tgirke/manuals/master/vignettes/07_systemPipeR/systemPipeR.R"><code class="highlighter-rouge">.R</code></a>,
+<a href="https://htmlpreview.github.io/?https://github.com/tgirke/systemPipeR/master/inst/extdata/slides/systemPipeRslides.html"><code class="highlighter-rouge">HTML Slides</code></a></p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p><a href="http://www.bioconductor.org/packages/devel/bioc/html/systemPipeR.html"><em><code class="highlighter-rouge">systemPipeR</code></em></a> provides utilities for building and running automated end-to-end analysis workflows for a wide range of next generation sequence (NGS) applications such as RNA-Seq, ChIP-Seq, VAR-Seq and Ribo-Seq (Girke , 2014). Important features include a uniform workflow interface across different NGS applications, automated report generation, and support for running both R and command-line software, such as NGS aligners or peak/variant callers, on local computers or compute clusters. The latter supports interactive job submissions and batch submissions to queuing systems of clusters. For instance, <em><code class="highlighter-rouge">systemPipeR</code></em> can be used with most command-line aligners such as <code class="highlighter-rouge">BWA</code> (Li , 2013; Li et al., 2009), <code class="highlighter-rouge">TopHat2</code> (Kim et al., 2013) and <code class="highlighter-rouge">Bowtie2</code> (Langmead et al., 2012), as well as the R-based NGS aligners <a href="http://www.bioconductor.org/packages/devel/bioc/html/Rsubread.html"><em><code class="highlighter-rouge">Rsubread</code></em></a> (Liao et al., 2013) and <a href="http://www.bioconductor.org/packages/devel/bioc/html/gmapR.html"><em><code class="highlighter-rouge">gsnap (gmapR)</code></em></a> (Wu et al., 2010). Efficient handling of complex sample sets (<em>e.g.</em> FASTQ/BAM files) and experimental designs is facilitated by a well-defined sample annotation infrastructure which improves reproducibility and user-friendliness of many typical analysis workflows in the NGS area (Lawrence et al., 2013).</p>
+
+<p>Motivation and advantages of <em><code class="highlighter-rouge">sytemPipeR</code></em> environment:</p>
+
+<ol>
+  <li>Facilitates design of complex NGS workflows involving multiple R/Bioconductor packages</li>
+  <li>Common workflow interface for different NGS applications</li>
+  <li>Makes NGS analysis with Bioconductor utilities more accessible to new users</li>
+  <li>Simplifies usage of command-line software from within R</li>
+  <li>Reduces complexity of using compute clusters for R and command-line software</li>
+  <li>Accelerates runtime of workflows via parallelzation on computer systems with mutiple CPU cores and/or multiple compute nodes</li>
+  <li>Automates generation of analysis reports to improve reproducibility</li>
+</ol>
+
+<p>A central concept for designing workflows within the <em><code class="highlighter-rouge">sytemPipeR</code></em> environment is the use of workflow management containers called <em><code class="highlighter-rouge">SYSargs</code></em> (see Figure 1). Instances of this S4 object class are constructed by the <em><code class="highlighter-rouge">systemArgs</code></em> function from two simple tabular files: a <em><code class="highlighter-rouge">targets</code></em> file and a <em><code class="highlighter-rouge">param</code></em> file. The latter is optional for workflow steps lacking command-line software. Typically, a <em><code class="highlighter-rouge">SYSargs</code></em> instance stores all sample-level inputs as well as the paths to the corresponding outputs generated by command-line- or R-based software generating sample-level output files, such as read preprocessors (trimmed/filtered FASTQ files), aligners (SAM/BAM files), variant callers (VCF/BCF files) or peak callers (BED/WIG files). Each sample level input/outfile operation uses its own <em><code class="highlighter-rouge">SYSargs</code></em> instance. The outpaths of <em><code class="highlighter-rouge">SYSargs</code></em> usually define the sample inputs for the next <em><code class="highlighter-rouge">SYSargs</code></em> instance. This connectivity is established by writing the outpaths with the <em><code class="highlighter-rouge">writeTargetsout</code></em> function to a new <em><code class="highlighter-rouge">targets</code></em> file that serves as input to the next <em><code class="highlighter-rouge">systemArgs</code></em> call. Typically, the user has to provide only the initial <em><code class="highlighter-rouge">targets</code></em> file. All downstream <em><code class="highlighter-rouge">targets</code></em> files are generated automatically. By chaining several <em><code class="highlighter-rouge">SYSargs</code></em> steps together one can construct complex workflows involving many sample-level input/output file operations with any combinaton of command-line or R-based software.</p>
+
+<p><img src="systemPipeR_files/SystemPipeR_Workflow.png" alt="" /></p>
+<div align="center">**Figure 1:** Workflow design structure of *systemPipeR* </div>
+
+<p>The intended way of running <em><code class="highlighter-rouge">sytemPipeR</code></em> workflows is via <em><code class="highlighter-rouge">*.Rnw</code></em> or <em><code class="highlighter-rouge">*.Rmd</code></em> files, which can be executed either line-wise in interactive mode or with a single command from R or the command-line using a <a href="https://github.com/tgirke/systemPipeR/blob/master/inst/extdata/Makefile"><em><code class="highlighter-rouge">Makefile</code></em></a>. This way comprehensive and reproducible analysis reports in PDF or HTML format can be generated in a fully automated manner by making use of the highly functional reporting utilities available for R. Templates for setting up custom project reports are provided as <em><code class="highlighter-rouge">*.Rnw</code></em> files by the helper package <em><code class="highlighter-rouge">systemPipeRdata</code></em> and in the vignettes subdirectory of <em><code class="highlighter-rouge">systemPipeR</code></em>. The corresponding PDFs of these report templates are available here: <a href="https://github.com/tgirke/systemPipeR/blob/master/vignettes/systemPipeRNAseq.pdf?raw=true"><em><code class="highlighter-rouge">systemPipeRNAseq</code></em></a>, <a href="https://github.com/tgirke/systemPipeR/blob/master/vignettes/systemPipeRIBOseq.pdf?raw=true"><em><code class="highlighter-rouge">systemPipeRIBOseq</code></em></a>, <a href="https://github.com/tgirke/systemPipeR/blob/master/vignettes/systemPipeChIPseq.pdf?raw=true"><em><code class="highlighter-rouge">systemPipeChIPseq</code></em></a> and <a href="https://github.com/tgirke/systemPipeR/blob/master/vignettes/systemPipeVARseq.pdf?raw=true"><em><code class="highlighter-rouge">systemPipeVARseq</code></em></a>. To work with <em><code class="highlighter-rouge">*.Rnw</code></em> or <em><code class="highlighter-rouge">*.Rmd</code></em> files efficiently, basic knowledge of <a href="https://www.stat.uni-muenchen.de/~leisch/Sweave/"><em><code class="highlighter-rouge">Sweave</code></em></a> or <a href="http://yihui.name/knitr/"><em><code class="highlighter-rouge">knitr</code></em></a> and <a href="http://www.latex-project.org/"><em><code class="highlighter-rouge">Latex</code></em></a> or <a href="http://rmarkdown.rstudio.com/"><em><code class="highlighter-rouge">R Markdown v2</code></em></a> is required.</p>
+
+
+
+<div class="tags">
+    
+</div>
+
+    
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2016 Thomas Girke. All rights reserved. <br />
+<p>Page last updated:</span> Sun Mar  6 18:04:22 2016<br/> Site last generated: Jun 28, 2016 <br />
+<p><img src="/manuals/images/company_logo.png" alt="Company logo"/></p>
+                </div>
+            </div>
+</footer>
+
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+    </div>
+    <script>
+    jQuery(function ($) {
+        $('.post-content').annotator()
+                .annotator('setupPlugins', {tokenUrl: 'http://example.com/api/token'})
+    });
+    </script>
+</body>
+
+</html>

@@ -1,7 +1,7 @@
 ---
 title: Ring Perception and Aromaticity Assignment
 keywords: 
-last_updated: Sun Mar  6 19:34:18 2016
+last_updated: Fri Jul  1 13:53:21 2016
 ---
 
 The function `rings` identifies all possible rings in one
@@ -30,7 +30,7 @@ plotted with the ring bonds highlighted in color:
  plot(sdfset[1], print=FALSE, colbonds=atomindex) 
 {% endhighlight %}
 
-![](ChemmineR_files/unnamed-chunk-90-1.png)
+![](../ChemmineR_files/unnamed-chunk-90-1.png)
 
 
 Alternatively, one can include the atom numbers in the plot:
@@ -40,7 +40,7 @@ Alternatively, one can include the atom numbers in the plot:
  plot(sdfset[1], print=FALSE, atomnum=TRUE, no_print_atoms="H") 
 {% endhighlight %}
 
-![](ChemmineR_files/unnamed-chunk-91-1.png)
+![](../ChemmineR_files/unnamed-chunk-91-1.png)
 
 
 Aromaticity information of the rings can be returned in a logical vector

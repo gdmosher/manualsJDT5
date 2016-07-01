@@ -1,7 +1,7 @@
 ---
 title: Similarity Comparisons and Searching
 keywords: 
-last_updated: Sun Mar  6 19:34:18 2016
+last_updated: Fri Jul  1 13:53:21 2016
 ---
 
 ## Maximum Common Substructure (MCS) Searching
@@ -25,7 +25,7 @@ short preview of some functionalities provided by the
  plotMCS(test) # Plots both query compounds with MCS in color 
 {% endhighlight %}
 
-![](ChemmineR_files/plotmcs-1.png)
+![](../ChemmineR_files/plotmcs-1.png)
 
 
 ## AP/APset Classes for Storing Atom Pair Descriptors
@@ -645,7 +645,7 @@ View similarity search results in R's graphics device:
  plot(sdfset[names(cmp.search(apset, apset["650065"], type=2, cutoff=4, quiet=TRUE))], print=FALSE) 
 {% endhighlight %}
 
-![](ChemmineR_files/search_result-1.png)
+![](../ChemmineR_files/search_result-1.png)
 
 
 View results online with Chemmine Tools: 

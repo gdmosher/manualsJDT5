@@ -1,7 +1,7 @@
 ---
 title: OpenBabel Functions
 keywords: 
-last_updated: Sun Mar  6 19:34:18 2016
+last_updated: Fri Jul  1 13:53:21 2016
 ---
 
 `ChemmineR` integrates now a subset of cheminformatics
@@ -91,7 +91,7 @@ sdfset2 = regenerateCoords(sdfset[1:5])
 plot(sdfset[1], regenCoords=TRUE,print=FALSE)
 {% endhighlight %}
 
-![](ChemmineR_files/unnamed-chunk-30-1.png)
+![](../ChemmineR_files/unnamed-chunk-30-1.png)
 
 `generate3DCoords`: Generate 3D coordinates for compounds with only 2D coordinates.
 

@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 keywords: 
-last_updated: Sun Mar  6 19:34:18 2016
+last_updated: Fri Jul  1 13:53:21 2016
 ---
 
 ## Installation
@@ -300,7 +300,7 @@ Plot molecule structure of one or many SDFs:
  plot(sdfset[1:4], print=FALSE) # Plots structures to R graphics device 
 {% endhighlight %}
 
-![](ChemmineR_files/plotstruct-1.png)
+![](../ChemmineR_files/plotstruct-1.png)
 
 
 
@@ -309,7 +309,7 @@ Plot molecule structure of one or many SDFs:
  sdf.visualize(sdfset[1:4]) # Compound viewing in web browser 
 {% endhighlight %}
 
-![Figure: Visualization webpage created by calling`sdf.visualize`.](ChemmineR_files/visualizescreenshot-small.png)
+![Figure: Visualization webpage created by calling`sdf.visualize`.](../ChemmineR_files/visualizescreenshot-small.png)
 
 Structure similarity searching and clustering: 
 

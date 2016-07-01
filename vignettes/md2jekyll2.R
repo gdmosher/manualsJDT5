@@ -3,6 +3,9 @@
 ######################################################################################
 ## Author: Thomas Girke
 ## Last update: Mar 6, 2016
+## Modified by: Gordon David Mosher
+## Last update: Jul 1, 2016
+## Now called md2jekyll2
 
 md2Jekyll <- function(mdfile="Rbasics.knit.md", sidebartitle=NULL, sidebarpos, outfilebasename=NULL, outpath="./", sidebar_url_path="./", fenced2highlight=TRUE, image_dir=NULL) {
     ## (1) Import md file 
@@ -111,7 +114,7 @@ md2Jekyll <- function(mdfile="Rbasics.knit.md", sidebartitle=NULL, sidebarpos, o
         image_dir2 <- gsub("^.*/", "", image_dir) # Note, image path is relative in html source
         newmdimgpath <- paste0(image_dir2, "/", gsub("^.*/", "", mdimgpath))
         newmdimgpath <- paste0(gsub("(\\!\\[.*{0,}\\]\\().*", "\\1", mdimgtag),
-                               newmdimgpath,
+                               "../", newmdimgpath,
                                ")")
         md[mdimgindex] <- newmdimgpath
         ## Copy image files into image_dir
@@ -209,15 +212,15 @@ md2Jekyll <- function(mdfile="Rbasics.knit.md", sidebartitle=NULL, sidebarpos, o
     ## Construct new sidebar entries
     mytitles <- gsub("# {1,}", "", titles)
     mytitles <- paste0(1:length(mytitles), ". ", mytitles)
-    myurls <- paste0("/mydoc/", basename(filenames))
-    myurls <- gsub(".md$", ".html", myurls)
+    myurls <- paste0("/manuals/", basename(filenames))
+    myurls <- gsub(".md$", "/", myurls)
     sectionheader <- c(paste0("  - title: ", sidebartitle),
                        "    audience: writers, designers",
                        "    platform: all",
                        "    product: all",
                        "    version: all",
                        "    output: web, pdf",
-                       "    items:",
+                       "    folderitems:",
                        "")
     subsections <- c("    - title: ",
                      "      url: ",
@@ -455,7 +458,7 @@ renderBib <- function(x, bibtex="bibtex.bib") {
 
 ## Run from command-line with arguments
 myargs <- commandArgs()
-md2Jekyll(mdfile=myargs[6], sidebartitle=NULL, sidebarpos=as.numeric(myargs[7]), outfilebasename=NULL, outpath="../../mydoc", sidebar_url_path="../../_data/mydoc/", fenced2highlight=TRUE, image_dir=NULL)
+md2Jekyll(mdfile=myargs[6], sidebartitle=NULL, sidebarpos=as.numeric(myargs[7]), outfilebasename=NULL, outpath="../../manuals", sidebar_url_path="../../_data/mydoc/", fenced2highlight=TRUE, image_dir=NULL)
 # $ Rscript ../md2jekyll.R bioassayR.knit.md 8
 
 

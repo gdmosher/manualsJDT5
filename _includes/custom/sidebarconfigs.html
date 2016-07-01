@@ -16,6 +16,9 @@
 {% elsif page.sidebar == "tags_sidebar" %}
 {% assign sidebar = site.data.sidebars.tags_sidebar.entries %}
 
+{% elsif page.last_updated == "Mon Feb 15 17:04:56 2016" %}
+{% assign sidebar = site.data.sidebars.manuals_sidebar.entries %}
+
 {% else %}
 {% assign sidebar = site.data.sidebars.manuals_sidebar.entries %}
 {% endif %}
@@ -36,4 +39,8 @@ sidebar configuration for print files
 
 {% if site.product == "product2" %}
 {% assign sidebar_pdf = site.data.sidebars.product2_sidebar.entries %}
+{% endif %}
+
+{% if site.product == "manuals" %}
+{% assign sidebar_pdf = site.data.sidebars.manuals_sidebar.entries %}
 {% endif %}
